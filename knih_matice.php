@@ -117,14 +117,16 @@ function m_determinant($m){
 
 function m_inverzni($m){
     $m_res = array();
+    $det = m_determinant($m);
     if(count($m[0]) != count($m))
         return false;
-    if(!m_determinant($m))
+    if(!$det)
         return false;
     for($i=0;$i<count($m);$i++):
         for($j=0;$i<count($m[0]);$j++):
-            $res = m_determinant(m_submat($m, $i, $j));
-            $res /= m_determinant($m);
+            $submat = m_submat($m, $i, $j);
+            $res = m_determinant($submat);
+            $res /= $det;
             $x = $i + $j;
             if($x % 2 == 1)
                 $res *= -1;
