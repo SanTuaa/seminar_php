@@ -1,7 +1,7 @@
-<?php 
+<?php
 $soubory = glob("./matice/*.txt");
 
-?><h2>Načíst matici</h2><?php 
+?><h2>Načíst matici</h2><?php
 if(!empty($soubory)):
   foreach($soubory as $f):
       $res = explode(".",$f);
@@ -18,10 +18,10 @@ if(count($_SESSION[m])==true):
       echo "<h3>$n</h3>";
       m($m);
       $maticeLocal[] = $m;
-      echo "<a href='./akce/matice-smaz.php?m=$n'>Smazat</a> ";    
+      echo "<a href='./akce/matice-smaz.php?m=$n'>Smazat</a> ";
       echo "<a href='./akce/matice-trans.php?m=$n'>Transponovat</a> ";
       if (count($m) == count($m[0]))
-        echo "Determinant ".m_determinant($m); 
+        echo "Determinant ".m_determinant($m);
   endforeach;
 endif;
 
@@ -42,5 +42,9 @@ m($mSoucin);
 echo "<h2>Determinant matice</h2>";
 $det = m_determinant($_SESSION[m][det2]);
 echo $det;
+
+echo "<h2>Inverzní matice</h2>";
+$inv = m_inverzni($_SESSION[m][inv]);
+m($inv);
 
 ?>
