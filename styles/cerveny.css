@@ -1,0 +1,36 @@
+#hlavicka{
+    background: #800;
+}
+
+#menu li a:hover{
+    background: #800 !important;
+}
+
+#menu li:hover ul li a:hover{
+    background: #800 !important;
+    color:#fff;
+}
+
+h1{
+    color: #B00;
+} 
+
+h2{
+    color: #800;
+}
+
+h3{
+    color: #800;
+}
+
+a, a:link, a:visited, a:active{
+    color: #800;
+}
+
+#paticka{
+    background: #800;
+}
+
+#horni{
+    border-bottom: 5px solid #800;
+}

@@ -1,0 +1,301 @@
+*{
+    font-size: 1em;
+    font-family: Calibri, Arial, Helvetica, Verdana, Tahoma, sans-serif;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: #444;
+}
+
+body{
+    background: #f7f7f7;
+    font-size: 16px;
+}
+
+#vnitrek{
+    margin: 0 10px;
+}
+
+#horni{
+    height: 172px;
+    position: relative;
+    background: #f2f2f2;
+}
+
+#hlavicka{
+    height: 125px;
+    width: 960px;
+    top: 0px;
+    position: absolute;
+}
+
+
+#banner_horni{
+    position: absolute;
+    right: 20px;
+    top: 32px;
+}
+
+#banner_dolni{
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+#nadpis{
+    position: absolute;
+    top: 40px;
+    left: 48px;
+}
+
+#nadpis *{
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 0.3;
+    text-decoration: none;
+}
+
+#nadpis #podnadpis{
+    font-size: 18px;
+}
+
+#telo{
+    background: url('../img/bg_telo.gif') repeat-y #fff;
+    width: 980px;
+    margin: 0 auto;
+}
+
+
+#levy{
+    float: left;
+    width: 764px;
+    _height: 393px;
+    min-height: 393px;
+}
+
+#pravy{
+    float: right;
+    width: 196px;
+    _height: 393px;
+    min-height: 393px;
+}
+
+
+#menu{
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+}
+#menu ul{margin: 0px; padding: 0px;} 
+#menu {width: 100%;} 
+#menu li {float:left;list-style-type:none;} 
+#menu li a{
+    display:block;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: #444;
+    padding: 16px 15px 8px 15px;
+} 
+#menu li a:hover{
+    color: #fff;
+} 
+#menu li ul{
+    display: none;
+} 
+
+#menu li:hover ul{
+    display:block;
+    position:absolute;
+} 
+
+#menu li:hover ul li{
+    display: block;
+    float: none;
+    width: 12em;
+    background: #f2f2f2;
+    border-left: 3px solid #eee;
+    border-bottom: 1px double #eee;
+} 
+
+#menu li:hover ul li a{
+    background: #eee;
+    color: #444;
+    padding: 4px 15px;
+    text-align: left;
+} 
+
+#paticka{
+    clear: both;
+    padding: 15px 25px;
+    font-size: 12px;
+    border-top: 5px solid #f2f2f2;
+}
+
+
+#paticka, #paticka *{
+    color: #fff;
+}
+
+
+/* Texty */
+h1{
+    margin: 20px 0 5px 0;
+    font-size: 2.25em;
+}
+
+h2{
+    margin: 40px 0px 10px 0px;
+    font-size: 1.6em;
+}
+
+.prvni{
+    margin-top: 0;
+}
+
+h3{
+    margin-top: 1.5em;
+    font-size: 1.2em;
+}
+
+hr{
+    clear: both;
+    border-top: solid #ddd 1px;
+}
+
+p, li{
+    line-height: 1.8;
+}
+
+p, ul{
+    margin: .5em 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul.seznam li{
+    background: url('../img/odr_seznam.gif') 0 .65em no-repeat;
+    padding-left: 15px;
+}
+
+.sede{
+    color: #777 !important;
+}
+
+
+a, a:link, a:visited, a:active{
+    background: transparent !important;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid #aaa;
+    vertical-align: top;
+    padding: 3px 3px;
+}
+
+th{
+    background: #f7f7f7;  
+}
+
+table.data{
+    border: 1px solid #c0c0c0;
+}
+
+table.data tr th{
+    background: url('../img/th_bg.jpg') repeat-x #fefefe;
+    padding: 10px 15px;
+}
+
+table.data tr td{
+    border-top: 1px solid #c0c0c0;
+    padding: 10px 15px;
+}
+
+table.data tr td.cislo{
+    text-align: right;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+.l{
+    float: left;
+}
+
+.ll{
+    float: left;
+    margin-right: 15px;
+}
+
+.r{
+    float: right;
+}
+
+.rr{
+    float: right;
+    margin-left: 15px;
+}
+
+.container{
+    background: transparent;
+    padding: 18px 18px;
+}
+
+.container2{
+    background: transparent;
+    padding: 0 15px;
+}
+
+
+.blok{
+    background: #f7f7f7;     
+    margin: 20px 0; 
+    padding: 10px 15px;
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+}
+
+
+.blok p{
+    line-height: 1.4;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.blok h2{
+    color: #800;
+    margin: 0;
+    padding-left: 20px;
+    background: url('../img/odr_h2_cervena.png') no-repeat 0px 3px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.perex{
+    font-weight: bold;
+}
+
+table.m tr td{
+    font-size: 1.5em;
+    min-width: 1.5em;
+    text-align: center;
+}
+
+textarea, input[type=text]{
+    border: #999 solid 1px;
+}
