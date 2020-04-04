@@ -124,12 +124,13 @@ function m_inverzni($m){
         return false;
     for($i=0;$i<count($m);$i++):
         for($j=0;$i<count($m[0]);$j++):
-            $submat = m_submat($m, $i, $j);
-            $res = m_determinant($submat);
-            $res /= $det;
-            $x = $i + $j;
+            $res = 1;
             if($x % 2 == 1)
                 $res *= -1;
+            $submat = m_submat($m, $i, $j);
+            $res *= m_determinant($submat);
+            $res /= $det;
+            $x = $i + $j;
             $m_res[$i][$j] = $res;
         endfor;
     endfor;
