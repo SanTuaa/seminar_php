@@ -46,5 +46,6 @@ echo $det;
 echo "<h2>Inverzní matice</h2>";
 $inv = m_inverzni($_SESSION[m][inv]);
 m($inv);
+m(m_soucin($inv, $_SESSION[m][inv]))
 
 ?>
