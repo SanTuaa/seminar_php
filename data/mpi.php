@@ -14,9 +14,9 @@ function mpi($x0,$x1,$eps){
     $xp = ($x0 + $x1) / 2;
     $yp = f($xp);
     $i = 0;
-    
+
     //echo "<p>x0 = $x0, y0 = $y0<br />x1 = $x1, y1 = $y1<br />xp = $xp, yp = $yp<br /></p>";
-    
+
     while(abs($yp)>$eps and $i<100):
       $i++;
       if($y0*$yp>0):
@@ -25,14 +25,14 @@ function mpi($x0,$x1,$eps){
       else:
         $x1 = $xp;
         $y1 = $yp;
-      endif;    
+      endif;
 
       $xp = ($x0 + $x1) / 2;
       $yp = f($xp);
 
       //echo "<p>i = $i<br />x0 = $x0, y0 = $y0<br />x1 = $x1, y1 = $y1<br />xp = $xp, yp = $yp<br /></p>";
     endwhile;
-    
+
     return $i<100 ? $xp : false;
 }
 

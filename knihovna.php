@@ -39,5 +39,3 @@ function week_day($datum_cas){
     //list($hod,$min,$sek) = explode(":",$cas);
     return date(w, mktime($hod,$min,$sek,$mes,$den,$rok));
 }
-
-?>
